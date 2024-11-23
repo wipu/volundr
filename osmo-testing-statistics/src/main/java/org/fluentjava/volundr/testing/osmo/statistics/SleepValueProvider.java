@@ -1,10 +1,10 @@
 package org.fluentjava.volundr.testing.osmo.statistics;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import static java.lang.Math.abs;
 
 import java.util.Random;
 
-import static java.lang.Math.abs;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 @FunctionalInterface
 public interface SleepValueProvider {

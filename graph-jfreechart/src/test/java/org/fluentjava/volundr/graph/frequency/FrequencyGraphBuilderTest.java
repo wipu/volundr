@@ -1,5 +1,14 @@
 package org.fluentjava.volundr.graph.frequency;
 
+import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.atomic.AtomicLong;
+
 import org.fluentjava.volundr.graph.jfreechart.DefaultDatasetAdapterFactory;
 import org.fluentjava.volundr.graph.jfreechart.ImageFactoryUsingJFreeChart;
 import org.fluentjava.volundr.graph.jfreechart.JFreeChartWriter;
@@ -10,15 +19,6 @@ import org.fluentjava.volundr.statistics.StatisticsValueProviderFactory;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import java.io.File;
-import java.io.IOException;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.concurrent.atomic.AtomicLong;
 
 @SuppressWarnings("PMD.UseProperClassLoader")
 public class FrequencyGraphBuilderTest {

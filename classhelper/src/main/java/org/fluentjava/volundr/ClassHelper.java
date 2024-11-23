@@ -1,5 +1,7 @@
 package org.fluentjava.volundr;
 
+import static java.util.Objects.requireNonNull;
+
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
@@ -10,8 +12,6 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.List;
-
-import static java.util.Objects.requireNonNull;
 
 /**
  * Improved version of https://dzone.com/articles/get-all-classes-within-package

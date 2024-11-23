@@ -1,5 +1,12 @@
 package org.fluentjava.volundr.testing.osmo;
 
+import static org.fluentjava.volundr.testing.osmo.statistics.SleepValueProvider.calculateNextSleepValue;
+import static org.junit.Assert.assertEquals;
+
+import java.time.Clock;
+import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.fluentjava.volundr.testing.osmo.model.logging.LoggingModel;
 import org.fluentjava.volundr.testing.osmo.model.statistics.StatisticsModel;
 import org.fluentjava.volundr.testing.osmo.statistics.SleepValueProvider;
@@ -8,14 +15,8 @@ import org.fluentjava.volundr.testing.osmo.statistics.StatisticsMeasurement;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import osmo.tester.generator.endcondition.Length;
-
-import java.time.Clock;
-import java.util.Random;
-import java.util.concurrent.atomic.AtomicInteger;
-
-import static org.fluentjava.volundr.testing.osmo.statistics.SleepValueProvider.calculateNextSleepValue;
-import static org.junit.Assert.assertEquals;
 
 public class OsmoRunnerExample {
 

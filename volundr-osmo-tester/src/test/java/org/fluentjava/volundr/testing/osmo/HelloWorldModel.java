@@ -1,12 +1,13 @@
 package org.fluentjava.volundr.testing.osmo;
 
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+import java.util.concurrent.atomic.AtomicInteger;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import osmo.tester.annotation.Guard;
 import osmo.tester.annotation.TestStep;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 @SuppressFBWarnings("EI_EXPOSE_REP2")
 public class HelloWorldModel implements OsmoModel {
